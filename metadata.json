@@ -1,0 +1,5 @@
+{
+  "name": "San Martín Traffic Dashboard",
+  "description": "Dashboard interactivo para el análisis de infracciones de tránsito en la región San Martín a partir de archivos CSV.",
+  "requestFramePermissions": []
+}

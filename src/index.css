@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  
+  --color-olive-900: #2D2D1F;
+  --color-olive-800: #3D3D2A;
+  --color-olive-700: #4D4D35;
+  --color-olive-600: #5A5A40;
+  --color-olive-500: #7A7A5A;
+  --color-olive-400: #9A9A7A;
+  --color-olive-300: #BABA9A;
+  --color-olive-200: #DADAAB;
+  --color-olive-100: #EAEAAB;
+  --color-olive-50: #F5F5F0;
+}
+
+@layer base {
+  body {
+    @apply bg-olive-50 text-olive-900 antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-white rounded-[2rem] shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-olive-200/50 transition-all duration-300;
+}
+
+.sidebar-item-active {
+  @apply bg-white text-olive-600 shadow-sm;
+}
+
+.sidebar-item {
+  @apply text-white/80 hover:bg-white/10 hover:text-white transition-all duration-200;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-olive-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-olive-200 rounded-full hover:bg-olive-300 transition-colors;
+}
